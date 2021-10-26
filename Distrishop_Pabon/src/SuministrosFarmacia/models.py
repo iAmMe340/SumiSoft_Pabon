@@ -1,8 +1,6 @@
 from django.db import models
 
 # Create your models here.
-
-
 class Proveedores(models.Model):
     id=models.AutoField(primary_key=True)
     codigo=models.CharField(max_length=10)

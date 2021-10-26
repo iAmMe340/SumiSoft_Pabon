@@ -1,5 +1,5 @@
 """
-WSGI config for Compras_Pabon project.
+WSGI config for SumiSoft_Pabon project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Compras_Pabon.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SumiSoft_Pabon.settings')
 
 application = get_wsgi_application()
