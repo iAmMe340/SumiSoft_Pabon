@@ -23,8 +23,6 @@ class Productos(models.Model):
 
 
 
-
-
 class Stock(models.Model):
     id=models.AutoField(primary_key=True)
     codigo=models.CharField(max_length=10)
