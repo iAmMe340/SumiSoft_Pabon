@@ -1,368 +1,109 @@
-{%load static %}
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="utf-8" />
-    <title>Sumisoft .:Pabon:. </title>
-    <script>document.write('<base href="' + document.location + '" />');</script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Titillium+Web:300" />
-    <link rel="stylesheet" href="../static/index/style.css" />
-    <script data-require="jquery@2.1.3" data-semver="2.1.3" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="../static/index/app.js"></script>
-  </head>
-
-  <body>
-    <nav id="main-menu" role="navigation" class="main-menu">
-      
-      <div class="logo">
-        
-        <a href="/">Logo</a>
-        
-      </div>
-      
-      <!-- <div class="settings"> -->
-        <ul>
-          <li class="has-subnav">
-            <a href="#settings">
-              <i class="fa fa-gear fa-lg"></i>
-              <span class="nav-text"> Settings</span>
-            </a>
-            <ul class="sub-nav">
-              <li><a href="#account">Account</a></li>
-              <li><a href="#profile">Profile</a></li>
-              <li><a href="#edit">Edit Profile</a></li>
-            </ul>
-          </li>
-        </ul>
-      <!-- </div> -->
-      
-      <ul>
-        
-        <li class="has-no-subnav">
-          <a href="#dashboard">
-            <i class="fa fa-home fa-lg"></i>
-            <span class="nav-text"> Dashboard</span>
-          </a>
-        </li>
-        
-        <li class="has-subnav">
-          <a href="#overview">
-            <i class="fa fa-area-chart fa-lg"></i>
-            <span class="nav-text"> Overview</span>
-          </a>
-        </li>
-        
-        <li class="has-subnav">
-          <a href="#reports">
-            <i class="fa fa-file fa-lg"></i>
-            <span class="nav-text"> Reports</span>
-          </a>
-        </li>
-        
-        <li class="has-subnav">
-          <a href="#analytics">
-            <i class="fa fa-line-chart fa-lg"></i>
-            <span class="nav-text"> Analytics</span>
-          </a>
-        </li>
-        
-        <li class="has-no-subnav">
-          <a href="#export">
-            <i class="fa fa-download"></i>
-            <span class="nav-text"> Export</span>
-          </a>
-        </li>
-      </ul>
-      
-      <ul class="logout">
-        <li class="has-no-subnav">
-          <a href="#logout">
-            <i class="fa fa-sign-out fa-lg"></i>
-            <span class="nav-text"> Cerrar Sesión</span>
-          </a>
-        </li>
-      </ul>
-      
-    </nav>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
     
-    <!-- <div class="navbar navbar-default navbar-fixed-top">
-      
-    </div> -->
-    
-    <div class="container-fluid app-view-container">
-      
-      <div class="row">
-        
-        <main id="main" role="main" class="container-fluid main">
-          <div id="settings">
-            <h1 class="page-header">Settings</h1>
-          </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-          <div id="overview">
-            <h1 class="page-header">Overview</h1>
-          </div>
+    <title> .::Distrishop Pabon::. </title>
+</head>
+<body>
 
-          <div id="reports">
-            <h1 class="page-header">Reports</h1>
-          </div>
+      <table id="Cotizaciones" class="table table-dark">
+        <thead>
+            <tr>
+                <th>Código de producto</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead >
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Naproxeno x200 mg</td>
+                <td>$100</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>ibuprofeno x200 mg</td>
+                <td>$100</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ibuprofeno x200 mg</td>
+                <td>$100</td>
+                <td>10</td>
+            </tr>
 
-          <div id="analytics">
-            <h1 class="page-header">Analytics</h1>
-          </div>
+        </tbody>
 
-          <div id="export">
-            <h1 class="page-header">Export</h1>
-          </div>
 
-          <div id="dashboard">
-            <h1 class="page-header">Dashboard</h1>
-          
-            <div class="row placeholders">
-              
-              <div class="col-xs-6 col-sm-3 placeholder">
-                
-                <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail" />
-                <!-- <div class="pie"></div> -->
-                <h4>Label</h4>
-                <span class="text-muted">Something else</span>
-              </div>
-              
-              <div class="col-xs-6 col-sm-3 placeholder">
-                <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail" />
-                <h4>Label</h4>
-                <span class="text-muted">Something else</span>
-              </div>
-              
-              <div class="col-xs-6 col-sm-3 placeholder">
-                
-                <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail" />
-                <h4>Label</h4>
-                <span class="text-muted">Something else</span>
-                
-              </div>
-              
-              <div class="col-xs-6 col-sm-3 placeholder">
-                
-                <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail" />
-                <h4>Label</h4>
-                <span class="text-muted">Something else</span>
-                
-              </div>
-              
-            </div>
+    </table> 
 
-            <h2 class="sub-header">Projects</h2>
-
-            <div class="table-responsive">
+ 
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.3/papaparse.min.js"  ></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.11.0/js/jquery.dataTables.min.js" ></script>
+<script src="https://editor.datatables.net/extensions/Editor/js/dataTables.editor.min.js"></script>
+<script src="https://cdn.datatables.net/datetime/1.1.1/js/dataTables.dateTime.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.print.min.js"></script>
+<script>
+    $(document).ready(function(){
+          $('#Cotizaciones').DataTable( {
+        dom: 'Bfrtip',
+        ajax: "../php/staff.php",
+        columns: [
+            { data: "Codigo de producto" },
+            { data: "Descripcion" },
+            { data: "Precio" , render: $.fn.dataTable.render.number( ',', '.', 0, '$' ) },
+            { data: "Cantidad" }
             
-              <table class="table table-striped">
-                
-                <thead>
-                  
-                  <tr>
-                    <th>#</th>
-                    <th>Header</th>
-                    <th>Header</th>
-                    <th>Header</th>
-                    <th>Header</th>
-                  </tr>
-                  
-                </thead>
-                
-                <tbody>
-                  
-                  <tr>
-                    <td>1,001</td>
-                    <td>Lorem</td>
-                    <td>ipsum</td>
-                    <td>dolor</td>
-                    <td>sit</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,002</td>
-                    <td>amet</td>
-                    <td>consectetur</td>
-                    <td>adipiscing</td>
-                    <td>elit</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,003</td>
-                    <td>Integer</td>
-                    <td>nec</td>
-                    <td>odio</td>
-                    <td>Praesent</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,003</td>
-                    <td>libero</td>
-                    <td>Sed</td>
-                    <td>cursus</td>
-                    <td>ante</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,004</td>
-                    <td>dapibus</td>
-                    <td>diam</td>
-                    <td>Sed</td>
-                    <td>nisi</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,005</td>
-                    <td>Nulla</td>
-                    <td>quis</td>
-                    <td>sem</td>
-                    <td>at</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,006</td>
-                    <td>nibh</td>
-                    <td>elementum</td>
-                    <td>imperdiet</td>
-                    <td>Duis</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,007</td>
-                    <td>sagittis</td>
-                    <td>ipsum</td>
-                    <td>Praesent</td>
-                    <td>mauris</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,008</td>
-                    <td>Fusce</td>
-                    <td>nec</td>
-                    <td>tellus</td>
-                    <td>sed</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,009</td>
-                    <td>augue</td>
-                    <td>semper</td>
-                    <td>porta</td>
-                    <td>Mauris</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,010</td>
-                    <td>massa</td>
-                    <td>Vestibulum</td>
-                    <td>lacinia</td>
-                    <td>arcu</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,011</td>
-                    <td>eget</td>
-                    <td>nulla</td>
-                    <td>Class</td>
-                    <td>aptent</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,012</td>
-                    <td>taciti</td>
-                    <td>sociosqu</td>
-                    <td>ad</td>
-                    <td>litora</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,013</td>
-                    <td>torquent</td>
-                    <td>per</td>
-                    <td>conubia</td>
-                    <td>nostra</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,014</td>
-                    <td>per</td>
-                    <td>inceptos</td>
-                    <td>himenaeos</td>
-                    <td>Curabitur</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>1,015</td>
-                    <td>sodales</td>
-                    <td>ligula</td>
-                    <td>in</td>
-                    <td>libero</td>
-                  </tr>
-                  
-                </tbody>
-                
-              </table>
-            
-            </div>
+        ],
+        select: true,
+        buttons: [
+            { extend: 'create', editor: editor },
+            { extend: 'edit',   editor: editor },
+            { extend: 'remove', editor: editor },
+            {
+                extend: 'CSV',
+                text: 'Export CSV',
+                className: 'btn-space',
+                exportOptions: {
+                    orthogonal: null
+                }
+            },
+            {
+                text: 'Import CSV',
+                action: function () {
+                    uploadEditor.create( {
+                        title: 'CSV file import'
+                    } );
+                }
+            },
+            {
+                extend: 'selectAll',
+                className: 'btn-space'
+            },
+            'selectNone',
+        ]
+    } );
 
-          </div>
-          
-        </main>
-        
-      </div>
-      
-    </div>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="../static/index/app.js"></script>
-    <script type="text/javascript">
-      (function ($) {
-          'use strict';
-
-          var mainMenu = $('#main-menu'),
-              nav = $('.has-no-subnav'),
-              subNavLi = $('.has-subnav'),
-              subNav = $('.sub-nav');
-
-          mainMenu.mouseleave(function () {
-              subNavLi.removeClass('expanded');
-              subNav.removeClass('expanded');
-          });
-
-          nav.click(function () {
-
-              subNavLi.removeClass('expanded');
-              subNav.removeClass('expanded');
-
-          });
-
-          subNavLi.click(function () {
-
-              var _this = $(this);
-
-              if (_this.hasClass('expanded')) {
-
-                  _this.removeClass('expanded');
-                  subNav.removeClass('expanded');
-
-              } else {
-
-                  subNavLi.removeClass('expanded');
-                  _this.addClass('expanded');
-                  subNav.removeClass('expanded');
-                  _this.find(subNav).addClass('expanded');
-
-              }
-
-          });
-
-      }(jQuery));
-    </script>
-  </body>
-
+});
+</script>
 </html>
